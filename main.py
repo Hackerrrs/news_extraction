@@ -1,9 +1,10 @@
 from datetime import date
+import os
 
 import requests
 
 url = "https://newsapi.org/v2/top-headlines"
-api_key = "0d2b941fac2844dcba7b9547be9d98bd"
+api_key = os.environ['API_KEY']
 sources = ["bbc-news", "cnn", "the-verge", "techcrunch", "espn", "medical-news-today"]
 # categories = ["business", "entertainment", "health", "science", "sports", "technology"]
 # all_news = {
